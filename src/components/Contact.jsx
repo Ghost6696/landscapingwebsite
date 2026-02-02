@@ -42,7 +42,7 @@ const Contact = () => {
                     viewport={{ once: true }}
                 >
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.298759367204!2d-88.0684166845561!3d42.04576397920785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880faed9b2fd8f9b%3A0x6b77c5c2d3c9e3f!2sAmerican%20Landscaping%20Inc!5e0!3m2!1sen!2sus!4v1654117861952!5m2!1sen!2sus"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.302525700779!2d-88.0683!3d42.0457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880faed9b2fd8f9b%3A0x6b77c5c2d3c9e3f!2s2233%20Palmer%20Dr%2C%20Schaumburg%2C%20IL%2060193!5e0!3m2!1sen!2sus!4v1706918000000!5m2!1sen!2sus"
                         width="100%"
                         height="100%"
                         allowFullScreen=""
