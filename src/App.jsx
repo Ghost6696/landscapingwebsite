@@ -1,11 +1,16 @@
 import { useRef } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
+import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Stats from './components/Stats';
 import Services from './components/Services';
 import About from './components/About';
+import Testimonials from './components/Testimonials';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import FloatingCTA from './components/FloatingCTA';
+import './App.css';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -19,25 +24,29 @@ function App() {
     <div className="app">
       {/* Progress Bar */}
       <motion.div
-        style={{
-          scaleX,
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          height: '4px',
-          background: 'var(--secondary)',
-          transformOrigin: '0%',
-          zIndex: 9999
-        }}
+        className="progress-bar"
+        style={{ scaleX }}
       />
 
-      <Hero />
-      <Services />
-      <About />
-      <Portfolio />
-      <Contact />
+      {/* Navigation */}
+      <Navbar />
+
+      {/* Main Content */}
+      <main>
+        <Hero />
+        <Stats />
+        <Services />
+        <About />
+        <Testimonials />
+        <Portfolio />
+        <Contact />
+      </main>
+
+      {/* Footer */}
       <Footer />
+
+      {/* Floating CTA */}
+      <FloatingCTA />
     </div>
   );
 }
