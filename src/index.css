@@ -1,0 +1,116 @@
+:root {
+  /* Luxury Palette */
+  --primary: #1A3c34;
+  /* Deep Moss Green - Authority, Nature */
+  --primary-light: #2c5e52;
+  --primary-dark: #0f2621;
+
+  --secondary: #D4AF37;
+  /* Champagne Gold - Subtle Luxury Accents */
+  --secondary-light: #e6c86e;
+
+  --surface: #ffffff;
+  /* Pure White */
+  --background: #F9F9EB;
+  /* Alabaster White/Cream - Warmth */
+  --background-alt: #f1f1e6;
+
+  --text: #2C2C2C;
+  /* Charcoal - Softer than black */
+  --text-light: #5a5a5a;
+
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Lato', sans-serif;
+
+  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --shadow-sm: 0 4px 12px rgba(27, 67, 50, 0.08);
+  --shadow-lg: 0 20px 40px rgba(27, 67, 50, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 6rem 0;
+}
+
+.bg-white {
+  background-color: var(--surface);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 4px;
+}
